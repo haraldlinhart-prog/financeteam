@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinanceTeam.de – Experten für Finanzvermittlung & private Finanzberatung</title>
+  <meta name="description" content="FinanceTeam.de – Ihr Spezialistenteam für Finanzvermittlung, private Finanzplanung, Unternehmensfinanzierung und Kreditvermittlung. Jetzt kostenloses Erstgespräch vereinbaren." />
+  <meta name="keywords" content="Finanzvermittlung, Finanzberatung, private Finanzen, Unternehmensfinanzierung, Kreditvermittlung, Finanzierung, Finanzplanung, Kapitalbeschaffung, Investmentberatung, Vermögensverwaltung, Holding, Offshore, Finanzexperten" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.financeteam.de/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FinanceTeam.de – Experten für Finanzvermittlung & private Finanzberatung" />
+  <meta property="og:description" content="Ihr Spezialistenteam für Finanzvermittlung, private Finanzplanung und Unternehmensfinanzierung." />
+  <meta property="og:url" content="https://www.financeteam.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['requireConsent']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//counter.ixan.org/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '32']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+
+  <!-- Statcounter -->
+  <script type="text/javascript">
+    var sc_project=10295364;
+    var sc_invisible=1;
+    var sc_security="deaa4e37";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10295364/0/deaa4e37/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0D1B2A;
+      --navy-mid: #16293E;
+      --gold: #C9A84C;
+      --gold-light: #E2C97A;
+      --gray-bg: #F5F6F8;
+      --gray-text: #6B7280;
+      --white: #FFFFFF;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(13,27,42,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      font-weight: 600 !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a3a5c 100%);
+      display: flex;
+      align-items: center;
+      padding: 6rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title em {
+      font-style: normal;
+      color: var(--gold);
+      position: relative;
+    }
+
+    .hero-title em::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: underline-in 0.8s ease 0.6s forwards;
+    }
+
+    @keyframes underline-in {
+      to { transform: scaleX(1); }
+    }
+
+    .hero-sub {
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 520px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 0.875rem 2rem;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      padding: 0.875rem 2rem;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: border-color 0.2s, background 0.2s;
+      display: inline-block;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.08);
+      color: var(--gold);
+    }
+
+    /* Hero stats card */
+    .hero-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.25rem;
+    }
+
+    .stat-item:last-child { margin-bottom: 0; }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 5rem 2rem; }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .section-title.light { color: var(--white); }
+
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--gray-text);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+    }
+
+    .section-lead.light { color: rgba(255,255,255,0.65); }
+
+    /* ── LEISTUNGEN ── */
+    #leistungen { background: var(--gray-bg); }
+
+    .leistungen-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .leistung-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 2rem;
+      border: 1px solid #E8EAF0;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      position: relative;
+    }
+
+    .leistung-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 8px 32px rgba(13,27,42,0.1);
+      transform: translateY(-3px);
+    }
+
+    .leistung-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.5rem;
+    }
+
+    .leistung-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .leistung-card p {
+      font-size: 0.9rem;
+      color: var(--gray-text);
+      line-height: 1.65;
+    }
+
+    /* ── VORTEILE / ÜBER UNS ── */
+    #ueber {
+      background: var(--navy);
+    }
+
+    .ueber-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .vorteil-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .vorteil-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .vorteil-check {
+      width: 24px;
+      height: 24px;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--gold);
+      font-size: 0.75rem;
+    }
+
+    .vorteil-item p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .vorteil-item strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 0.2rem;
+      font-weight: 600;
+    }
+
+    .werte-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .wert-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .wert-card h4 {
+      font-family: var(--font-display);
+      color: var(--gold);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .wert-card p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+
+    /* ── TERMIN ── */
+    #termin {
+      background: var(--gray-bg);
+    }
+
+    .termin-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .termin-box {
+      background: var(--white);
+      border: 1px solid #E8EAF0;
+      border-radius: 12px;
+      padding: 3rem;
+      margin-top: 2rem;
+    }
+
+    .termin-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .termin-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .termin-box p {
+      color: var(--gray-text);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .btn-termin {
+      background: var(--navy);
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-termin:hover {
+      background: var(--navy-mid);
+      transform: translateY(-1px);
+    }
+
+    .btn-termin-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-termin-gold:hover {
+      background: var(--gold-light);
+      color: var(--navy);
+    }
+
+    /* ── KONTAKT ── */
+    #kontakt {
+      background: var(--white);
+    }
+
+    .kontakt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .kontakt-info h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .kontakt-info p {
+      color: var(--gray-text);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .kontakt-detail {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .kontakt-detail-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* Form */
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #D1D5DB;
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--navy);
+      background: var(--white);
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.12);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .honeypot { display: none !important; }
+
+    .form-submit {
+      width: 100%;
+      background: var(--navy);
+      color: var(--white);
+      padding: 0.875rem;
+      border: none;
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover { background: var(--navy-mid); }
+    .form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .form-msg {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .form-msg.success { background: #D1FAE5; color: #065F46; display: block; }
+    .form-msg.error { background: #FEE2E2; color: #991B1B; display: block; }
+
+    /* ── IMPRESSUM ── */
+    #impressum {
+      background: var(--gray-bg);
+      padding: 4rem 2rem;
+    }
+
+    .impressum-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .impressum-inner h2 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 1.5rem;
+    }
+
+    .impressum-inner p, .impressum-inner address {
+      font-size: 0.9rem;
+      color: var(--gray-text);
+      line-height: 1.8;
+      font-style: normal;
+      margin-bottom: 1rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* ── COOKIE BANNER ── */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--navy);
+      border-top: 2px solid var(--gold);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      z-index: 999;
+      flex-wrap: wrap;
+    }
+
+    #cookie-banner p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.875rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    #cookie-banner a { color: var(--gold); }
+
+    .cookie-btns { display: flex; gap: 0.75rem; flex-shrink: 0; }
+
+    .cookie-btn {
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-family: var(--font-body);
+    }
+
+    .cookie-accept { background: var(--gold); color: var(--navy); }
+    .cookie-decline { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.2); }
+    .cookie-decline:hover { color: var(--white); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { display: none; }
+      .leistungen-grid { grid-template-columns: 1fr 1fr; }
+      .ueber-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .kontakt-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .werte-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .leistungen-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      section { padding: 3.5rem 1.25rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-title em::after { animation: none; transform: scaleX(1); }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Finance<span>Team</span>.de</a>
+    <ul class="nav-links">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#ueber">Über uns</a></li>
+      <li><a href="#termin">Termin</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#kontakt" class="nav-cta">Beratung anfragen</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">Ihr Finanzexperten-Netzwerk</div>
+        <h1 class="hero-title">
+          Finanzvermittlung &amp;<br>
+          <em>private Finanzberatung</em><br>
+          auf höchstem Niveau
+        </h1>
+        <p class="hero-sub">
+          Ob Unternehmensfinanzierung, Kreditvermittlung oder private Finanzplanung — 
+          unser Spezialistenteam begleitet Sie mit über 40 Jahren Expertise auf dem Weg 
+          zu Ihrer optimalen Finanzlösung.
+        </p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn-primary">Kostenlose Erstberatung</a>
+          <a href="https://telefon-termin.com/beratung/" target="_blank" rel="noopener" class="btn-secondary">📅 Online-Termin buchen</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-title">Unsere Expertise auf einen Blick</div>
+        <div class="stat-item">
+          <span class="stat-number">40+</span>
+          <span class="stat-label">Jahre Erfahrung im Finanzbereich</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Länder – Globales Netzwerk</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">140+</span>
+          <span class="stat-label">Partnerbüros weltweit</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Diskretion & Vertraulichkeit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN -->
+  <section id="leistungen">
+    <div class="section-inner">
+      <div class="section-eyebrow">Was wir bieten</div>
+      <h2 class="section-title">Unsere Leistungen</h2>
+      <p class="section-lead">Von der privaten Finanzplanung bis zur komplexen Unternehmensfinanzierung — wir finden die passende Lösung für Ihre Situation.</p>
+      <div class="leistungen-grid">
+        <div class="leistung-card">
+          <div class="leistung-icon">💼</div>
+          <h3>Finanzvermittlung</h3>
+          <p>Wir vermitteln maßgeschneiderte Finanzierungen für Unternehmen und Privatpersonen — schnell, diskret und mit Zugang zu einem breiten Netzwerk an Kapitalgebern.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">🏠</div>
+          <h3>Private Finanzplanung</h3>
+          <p>Strukturierte Planung Ihrer privaten Finanzen: Vermögensaufbau, Altersvorsorge, Immobilienfinanzierung und Absicherung — individuell auf Ihre Lebenssituation abgestimmt.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">🏢</div>
+          <h3>Unternehmensfinanzierung</h3>
+          <p>Kapitalbeschaffung für Ihr Unternehmen: Betriebsmittelkredite, Investitionsfinanzierungen, Mezzanine-Kapital und Beteiligungsfinanzierung aus einer Hand.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">📊</div>
+          <h3>Kreditvermittlung</h3>
+          <p>Wir vergleichen Konditionen und vermitteln den optimalen Kredit — ob Privatkredit, Unternehmenskredit oder Spezialfinanzierung mit besonderen Anforderungen.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">🌍</div>
+          <h3>Internationale Strukturen</h3>
+          <p>Holding-Strukturen, Offshore-Finanzierungen und internationale Kapitalmärkte — wir erschließen Ihnen globale Finanzierungsmöglichkeiten mit lokalem Know-how.</p>
+        </div>
+        <div class="leistung-card">
+          <div class="leistung-icon">🛡️</div>
+          <h3>Vermögensschutz</h3>
+          <p>Strategische Absicherung Ihres Vermögens durch rechtskonforme Strukturen, Trusts und internationale Diversifikation — für langfristigen Erhalt und Wachstum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section id="ueber">
+    <div class="section-inner">
+      <div class="ueber-grid">
+        <div>
+          <div class="section-eyebrow">Warum FinanceTeam.de</div>
+          <h2 class="section-title light">Ihre Vorteile mit uns</h2>
+          <p class="section-lead light">Wir sind kein Call-Center, sondern ein eingespieltes Team von Spezialisten, das für jede Anfrage die passende Lösung findet.</p>
+          <ul class="vorteil-list">
+            <li class="vorteil-item">
+              <span class="vorteil-check">✓</span>
+              <div>
+                <strong>Maßgeschneiderte Beratung</strong>
+                <p>Keine Standardlösungen — wir analysieren Ihre individuelle Situation und entwickeln darauf abgestimmte Finanzierungskonzepte.</p>
+              </div>
+            </li>
+            <li class="vorteil-item">
+              <span class="vorteil-check">✓</span>
+              <div>
+                <strong>Globales Netzwerk</strong>
+                <p>Mit über 140 Partnerbüros in mehr als 50 Ländern haben wir Zugang zu internationalen Kapitalquellen, die anderen verwehrt bleiben.</p>
+              </div>
+            </li>
+            <li class="vorteil-item">
+              <span class="vorteil-check">✓</span>
+              <div>
+                <strong>Absolute Diskretion</strong>
+                <p>Ihre Anfragen und Finanzdaten behandeln wir mit höchster Vertraulichkeit — selbstverständlich und ohne Ausnahme.</p>
+              </div>
+            </li>
+            <li class="vorteil-item">
+              <span class="vorteil-check">✓</span>
+              <div>
+                <strong>Schnelle Umsetzung</strong>
+                <p>Dank eingespielter Prozesse und direkter Kontakte zu Entscheidungsträgern kommen wir schneller zu Ergebnissen als klassische Banken.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="werte-grid">
+          <div class="wert-card">
+            <h4>Vertrauen</h4>
+            <p>Vertrauen bildet die Basis unserer Zusammenarbeit — auf die Sie sich zu 100% verlassen können.</p>
+          </div>
+          <div class="wert-card">
+            <h4>Innovation</h4>
+            <p>Wir bringen neue Ansätze und innovative Lösungen ein, um Ihren Finanzierungserfolg zu steigern.</p>
+          </div>
+          <div class="wert-card">
+            <h4>Exzellenz</h4>
+            <p>Unser Streben nach Exzellenz zeigt sich in der Qualität jeder Beratung und Lösung.</p>
+          </div>
+          <div class="wert-card">
+            <h4>Netzwerk</h4>
+            <p>Jahrzehntelang aufgebaute Beziehungen zu Banken, Investoren und Kapitalgebern weltweit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERMIN -->
+  <section id="termin">
+    <div class="section-inner">
+      <div class="termin-inner">
+        <div class="section-eyebrow">Jetzt handeln</div>
+        <h2 class="section-title">Telefonischen Beratungstermin buchen</h2>
+        <p class="section-lead" style="margin:0 auto;">Buchen Sie direkt online einen Telefontermin mit einem unserer Finanzexperten — kostenlos und unverbindlich.</p>
+        <div class="termin-box">
+          <div class="termin-icon">📅</div>
+          <h3>Online-Terminbuchung</h3>
+          <p>Wählen Sie einen für Sie passenden Termin aus unserem Kalender. Einer unserer Spezialisten ruft Sie zum vereinbarten Zeitpunkt an — kein Warten, kein Callcenter.</p>
+          <a href="https://telefon-termin.com/beratung/" target="_blank" rel="noopener" class="btn-termin btn-termin-gold">
+            📅 Jetzt Termin buchen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div class="section-inner">
+      <div class="kontakt-grid">
+        <div class="kontakt-info">
+          <div class="section-eyebrow">Kontakt</div>
+          <h2 class="section-title">Sprechen wir über Ihre Finanzen</h2>
+          <p>Schildern Sie uns kurz Ihr Anliegen — wir melden uns innerhalb von 24 Stunden bei Ihnen. Alle Anfragen werden vertraulich behandelt.</p>
+          <div class="kontakt-detail">
+            <span class="kontakt-detail-icon">✉️</span>
+            <span>info@financeteam.de</span>
+          </div>
+          <div class="kontakt-detail">
+            <span class="kontakt-detail-icon">🌐</span>
+            <span>PAN21.COM Corporate Consultants Ltd<br>61 Bridge Street, Kington HR5 3DJ, UK</span>
+          </div>
+          <div style="margin-top:1.5rem;">
+            <a href="https://telefon-termin.com/beratung/" target="_blank" rel="noopener" class="btn-primary">📅 Direkt Termin buchen</a>
+          </div>
+        </div>
+
+        <div class="kontakt-form">
+          <form id="contactForm" novalidate>
+            <!-- Honeypot -->
+            <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
+            <input type="hidden" id="formstart" name="formstart" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Max Mustermann" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" required placeholder="max@beispiel.de" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="thema">Thema</label>
+              <select id="thema" name="thema">
+                <option value="">Bitte wählen…</option>
+                <option>Finanzvermittlung</option>
+                <option>Private Finanzplanung</option>
+                <option>Unternehmensfinanzierung</option>
+                <option>Kreditvermittlung</option>
+                <option>Internationale Strukturen</option>
+                <option>Vermögensschutz</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nachricht">Ihre Nachricht *</label>
+              <textarea id="nachricht" name="nachricht" required placeholder="Bitte beschreiben Sie kurz Ihr Anliegen…"></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">Nachricht senden</button>
+            <div class="form-msg" id="formMsg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPRESSUM -->
+  <section id="impressum">
+    <div class="impressum-inner">
+      <h2>Impressum</h2>
+      <address>
+        <strong>PAN21.COM Corporate Consultants Ltd</strong><br>
+        61 Bridge Street<br>
+        Kington, HR5 3DJ<br>
+        United Kingdom<br>
+        Company No. 16117708
+      </address>
+      <p>
+        <strong>Vertreten durch:</strong> Harald Linhart<br>
+        <strong>E-Mail:</strong> info@financeteam.de<br>
+        <strong>Website:</strong> www.financeteam.de
+      </p>
+      <p>
+        Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV: Harald Linhart, Anschrift wie oben.<br>
+        FinanceTeam.de ist ein Informations- und Vermittlungsportal. Es werden keine Finanzdienstleistungen im Sinne des KWG erbracht.
+      </p>
+      <p>
+        <strong>Haftungshinweis:</strong> Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#impressum">Impressum</a>
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="https://www.pan21.com" target="_blank" rel="noopener">PAN21 Network</a>
+    </div>
+    <p>© 2026 FinanceTeam.de – Ein Service von PAN21.COM Corporate Consultants Ltd, Kington UK</p>
+    <div style="margin-top:0.75rem;">
+      <div id="pan21counter"></div>
+      <script src="https://pan21counter.de/c.js?id=DA7DAC" async></script>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" style="display:none;">
+    <p>Wir verwenden Cookies und Analyse-Tools (Matomo, Statcounter) zur Verbesserung unseres Angebots. Mehr in unserer <a href="#datenschutz">Datenschutzerklärung</a>.</p>
+    <div class="cookie-btns">
+      <button class="cookie-btn cookie-decline" onclick="cookieDecline()">Ablehnen</button>
+      <button class="cookie-btn cookie-accept" onclick="cookieAccept()">Akzeptieren</button>
+    </div>
+  </div>
+
+  <script>
+    // Formstart timestamp
+    document.getElementById('formstart').value = Date.now();
+
+    // Cookie Banner
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookie-banner').style.display = 'flex';
+    }
+
+    function cookieAccept() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      if (window._paq) window._paq.push(['rememberConsentGiven']);
+    }
+
+    function cookieDecline() {
+      localStorage.setItem('cookieConsent', 'declined');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Contact Form
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('submitBtn');
+      const msg = document.getElementById('formMsg');
+      msg.className = 'form-msg';
+      msg.style.display = 'none';
+
+      // Honeypot
+      if (document.querySelector('[name="website"]').value) return;
+
+      // Dwell time (min 3s)
+      const elapsed = (Date.now() - parseInt(document.getElementById('formstart').value)) / 1000;
+      if (elapsed < 3) {
+        msg.textContent = 'Bitte füllen Sie das Formular vollständig aus.';
+        msg.className = 'form-msg error';
+        return;
+      }
+
+      // Content filter
+      const nachricht = document.getElementById('nachricht').value;
+      const hasLongWord = nachricht.split(' ').some(w => w.length > 60);
+      if (hasLongWord) return;
+
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet…';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            thema: document.getElementById('thema').value,
+            nachricht,
+            elapsed: Math.round(elapsed),
+            website: document.querySelector('[name="website"]').value
+          })
+        });
+
+        if (res.ok) {
+          msg.textContent = 'Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns innerhalb von 24 Stunden.';
+          msg.className = 'form-msg success';
+          e.target.reset();
+          document.getElementById('formstart').value = Date.now();
+        } else {
+          throw new Error('Server error');
+        }
+      } catch {
+        msg.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info@financeteam.de.';
+        msg.className = 'form-msg error';
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Nachricht senden';
+    });
+  </script>
+
+</body>
+</html>

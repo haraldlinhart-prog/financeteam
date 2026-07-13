@@ -1384,6 +1384,7 @@
         if (res.ok) {
           msg.textContent = 'Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns innerhalb von 24 Stunden.';
           msg.className = 'form-msg success';
+          msg.style.display = 'block';
           e.target.reset();
           document.getElementById('formstart').value = Date.now();
         } else {
@@ -1392,6 +1393,7 @@
       } catch {
         msg.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an financeteam@pan21.com.';
         msg.className = 'form-msg error';
+        msg.style.display = 'block';
       }
 
       btn.disabled = false;

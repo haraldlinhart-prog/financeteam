@@ -87,7 +87,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: process.env.CONTACT_FROM || 'noreply@pan21.com',
-      to: 'info@financeteam.de',
+      to: 'financeteam@pan21.com',
       replyTo: email,
       subject: `Kontaktanfrage FinanceTeam.de – ${thema || 'Allgemein'}`,
       html: `

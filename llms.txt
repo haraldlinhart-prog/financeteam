@@ -1,0 +1,15 @@
+# FinanceTeam.de
+
+> FinanceTeam.de – Ihr Spezialistenteam für Finanzvermittlung, private Finanzplanung, Unternehmensfinanzierung und Kreditvermittlung. Jetzt kostenloses Erstgespräch vereinbaren.
+
+Diese Datei richtet sich an KI-Assistenten und Sprachmodelle (llms.txt-Standard) und beschreibt kurz, worum es auf dieser Website geht, damit Inhalte korrekt verstanden und zusammengefasst werden können.
+
+## Themen auf dieser Seite
+- Unsere Leistungen
+- Ihre Vorteile mit uns
+- Telefonischen Beratungstermin buchen
+- Sprechen wir über Ihre Finanzen
+- Impressum
+
+## Kontakt
+- Website: https://financeteam.de

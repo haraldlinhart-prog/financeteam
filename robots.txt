@@ -33,4 +33,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://financeteam.de/sitemap.xml
+Sitemap: https://www.financeteam.de/sitemap.xml

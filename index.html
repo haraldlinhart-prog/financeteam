@@ -17,32 +17,7 @@
   <meta property="og:locale" content="de_DE" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Matomo -->
-  <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//counter.ixan.org/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '32']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-
-  <!-- Statcounter -->
-  <script type="text/javascript">
-    var sc_project=10295364;
-    var sc_invisible=1;
-    var sc_security="deaa4e37";
-  </script>
-  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-  <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/10295364/0/deaa4e37/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <link rel="stylesheet" href="/fonts/fonts.css" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -712,46 +687,6 @@
       flex-wrap: wrap;
     }
 
-    /* ── COOKIE BANNER ── */
-    #cookie-banner {
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      background: var(--navy);
-      border-top: 2px solid var(--gold);
-      padding: 1.25rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      z-index: 999;
-      flex-wrap: wrap;
-    }
-
-    #cookie-banner p {
-      color: rgba(255,255,255,0.8);
-      font-size: 0.875rem;
-      flex: 1;
-      min-width: 200px;
-    }
-
-    #cookie-banner a { color: var(--gold); }
-
-    .cookie-btns { display: flex; gap: 0.75rem; flex-shrink: 0; }
-
-    .cookie-btn {
-      padding: 0.5rem 1.25rem;
-      border-radius: 4px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      font-family: var(--font-body);
-    }
-
-    .cookie-accept { background: var(--gold); color: var(--navy); }
-    .cookie-decline { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.2); }
-    .cookie-decline:hover { color: var(--white); }
-
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
@@ -1309,34 +1244,9 @@
     </div>
   </footer>
 
-  <!-- COOKIE BANNER -->
-  <div id="cookie-banner" style="display:none;">
-    <p>Wir verwenden Cookies und Analyse-Tools (Matomo, Statcounter) zur Verbesserung unseres Angebots. Mehr in unserer <a href="#datenschutz">Datenschutzerklärung</a>.</p>
-    <div class="cookie-btns">
-      <button class="cookie-btn cookie-decline" onclick="cookieDecline()">Ablehnen</button>
-      <button class="cookie-btn cookie-accept" onclick="cookieAccept()">Akzeptieren</button>
-    </div>
-  </div>
-
   <script>
     // Formstart timestamp
     document.getElementById('formstart').value = Date.now();
-
-    // Cookie Banner
-    if (!localStorage.getItem('cookieConsent')) {
-      document.getElementById('cookie-banner').style.display = 'flex';
-    }
-
-    function cookieAccept() {
-      localStorage.setItem('cookieConsent', 'accepted');
-      document.getElementById('cookie-banner').style.display = 'none';
-      if (window._paq) window._paq.push(['rememberConsentGiven']);
-    }
-
-    function cookieDecline() {
-      localStorage.setItem('cookieConsent', 'declined');
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
 
     // Contact Form
     document.getElementById('contactForm').addEventListener('submit', async function(e) {
